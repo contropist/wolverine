@@ -1,3 +1,6 @@
+# DEPRECATED: Try Mentat instead! https://github.com/AbanteAI/mentat
+
+
 # Wolverine
 
 ## About
@@ -36,6 +39,14 @@ If you want to use GPT-3.5 by default instead of GPT-4 uncomment the default mod
 You can also use flag `--confirm=True` which will ask you `yes or no` before making changes to the file. If flag is not used then it will apply the changes to the file
 
     python -m wolverine examples/buggy_script.py "subtract" 20 3 --confirm=True
+
+## Environment variables
+
+| env name            | description                                                       | default value |
+| ------------------- | ----------------------------------------------------------------- | ------------- |
+| OPENAI_API_KEY      | OpenAI API key                                                    | None          |
+| DEFAULT_MODEL       | GPT model to use                                                  | "gpt-4"       |
+| VALIDATE_JSON_RETRY | Number of retries when requesting OpenAI API (-1 means unlimites) | -1            |
 
 ## Future Plans
 
